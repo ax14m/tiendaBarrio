@@ -1,0 +1,42 @@
+﻿@model tiendaBarrio.Models.Compra
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Compra</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Producto.Nomp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Producto.Nomp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Grade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Grade)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CompraID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
